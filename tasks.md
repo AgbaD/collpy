@@ -1,13 +1,13 @@
 [ ] load bar 
     - [ ] frame color <str>
     - [ ] inside <list> [color, type eg,(:~/.\=+-|*_)]
-    - [ ] logic : say
 
 [ ] custom bottons
 
 [ ] highlights
 
-[ ] highlights
+[ ] bullet styles
+
 
 
 
