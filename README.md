@@ -1,2 +1,17 @@
-# FancyShell-Py
-make your shell sessions in python look fancy by importing this script
+# colpy
+Add color highlights, load bars and style to your python scripts and shell sessions
+
+[Colpy Gist](https://gist.github.com/BlankGodd/9457548d94925de245f9a9bbcc1c3f02)
+
+## Applications
+- Highlight 
+  - special texts
+  - errors
+        
+- Create
+  - Custom buttons
+  - List bullet styles
+  - Colorful loading bars
+   
+
+ 
