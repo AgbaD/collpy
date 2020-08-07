@@ -1,6 +1,6 @@
 [ ] load bar 
     - [ ] frame color <str>
-    - [ ] inside <list> [color, type eg,(:~/.\=+-|*_)]
+    - [X] inside <list> [color, type eg,(:~/.\=+-|*_)]
 
 [ ] custom bottons
 
