@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # Author:   @BlankGodd_
 
-from . import space, third, IterError
+from . import *
 from datetime import datetime
 import sys, time
 
@@ -54,7 +54,38 @@ class Load_bar:
                 self.start = now
                 sys.stdout.flush()
         
-                
-        
-        
 
+class Dark_bar(Load_bar):
+    def __init__(self, name='Loading...', length=20, color=None):
+        bar = '[' + dot(length) + "]"
+        self.bar = [i for i in bar] 
+        self.start = datetime.utcnow()
+        self.interval = 0
+        self.length = length
+        self.style = '█'
+        self.count = 1
+        self.name = name
+
+
+class Square_bar(Load_bar):
+    def __init__(self, name='Loading...', length=20, color=None):
+        bar = '[' + square(length) + "]"
+        self.bar = [i for i in bar] 
+        self.start = datetime.utcnow()
+        self.interval = 0
+        self.length = length
+        self.style = '▣'
+        self.count = 1
+        self.name = name
+
+class Circle_bar(Load_bar):
+    def __init__(self, name='Loading...', length=20, color=None):
+        bar = '[' + circle(length) + "]"
+        self.bar = [i for i in bar] 
+        self.start = datetime.utcnow()
+        self.interval = 0
+        self.length = length
+        self.style = '◉'
+        self.count = 1
+        self.name = name
+    
