@@ -3,21 +3,24 @@
 
 from . import space, third, IterError
 from datetime import datetime
-import sys
+import sys, time
 
 class Load_bar:
 
-	def __init__(self, name='Loading...', length=20, style='#', color=color_config):
-        self.bar = '['+space(length)+'] {}'
+    def __init__(self, name='Loading...', length=20, style='#', 
+                    color=None):
+        bar = '[' + space(length) + "]"
+        self.bar = [i for i in bar] 
         self.start = datetime.utcnow()
         self.interval = 0
         self.length = length
         self.style = style
         self.count = 1
+        self.name = name
 
     def next(self,x,i):
         count = 1
-        while self.count <= self.length:
+        if self.count <= self.length:
             if x * self.length == self.iterator:
                 self.bar[self.count] = self.style
                 self.count += 1
@@ -33,6 +36,7 @@ class Load_bar:
     def get_diff(self,x):
         if x < 2:
             raise IterError("Iterator value too small")
+
         if x % self.length == 0:
             return x / self.length
         return x // self.length
@@ -40,15 +44,14 @@ class Load_bar:
     def iter(self, iterator):
         self.iterator = iterator
         x = self.get_diff(iterator)
-        with self:
-            for i in range(iterator+1):
-                yield i
-                now = datetime.utcnow()
-                if i % x == 0:
-                    self.next(x,i)
-                    self.bar.format(now-self.start)
-                    sys.stdout.write('\r' + self.bar)
-                    self.start = now
+        for i in range(iterator+1):
+            now = datetime.utcnow()
+            if i % x == 0:
+                self.next(x,i)
+                b = self.name + ''.join(self.bar)
+                sys.stdout.write('\r' + b)
+                # time.sleep()
+                self.start = now
                 sys.stdout.flush()
         
                 
