@@ -1,6 +1,12 @@
 [ ] load bar 
     - [ ] frame color <str>
     - [X] inside <list> [color, type eg,(:~/.\=+-|*_)]
+    - [ ] random bar
+
+
+[ ] progress display
+    - [X] percentage
+    - [ ] spinner
 
 [ ] custom bottons
 
@@ -11,5 +17,3 @@
 
 https://github.com/verigak/progress/blob/master/progress/bar.py
 
-the load bar works for iterators
-eg
