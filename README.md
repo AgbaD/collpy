@@ -11,7 +11,12 @@ Add color highlights, load/progress bars and style to your python scripts and sh
 - Create
   - Custom buttons
   - List bullet styles
+
+- Progress bars
   - Colorful loading bars
+  - Number percentage
+  - Random bars
+  - Download bar 
    
 To simulate downloads
  
