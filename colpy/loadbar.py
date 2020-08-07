@@ -48,7 +48,7 @@ class Load_bar:
             now = datetime.utcnow()
             if i % x == 0:
                 self.next(x,i)
-                b = self.name + ''.join(self.bar) + str(now-self.start)
+                b = self.name + ''.join(self.bar) + " || " + str(now-self.start)
                 sys.stdout.write('\r' + b)
                 if iterator < 10000000:
                     time.sleep(0.1)
