@@ -5,8 +5,8 @@ from colpy.loadbar import *
 
 darkbar = Dark_bar()
 loadbar = Load_bar()
-squarebar = Square_Bar()
-circlebar = Circle_Bar()
+squarebar = Square_bar()
+circlebar = Circle_bar()
 
 if __name__ == '__main__':
     loadbar.iter(iterator=10000000)
