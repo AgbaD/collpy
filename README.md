@@ -1,5 +1,5 @@
 # colpy
-Add color highlights, load/progress bars and style to your python scripts and shell sessions
+Add color highlights, load bars, progress displays and style to your python scripts and shell sessions
 
 [Colpy Gist](https://gist.github.com/BlankGodd/9457548d94925de245f9a9bbcc1c3f02)
 
@@ -14,9 +14,6 @@ Add color highlights, load/progress bars and style to your python scripts and sh
 
 - Progress bars
   - Colorful loading bars
-  - Number percentage
-  - Random bars
+  - Percentage progress display
+  - Random walk bars
   - Download bar 
-   
-To simulate downloads
- 
