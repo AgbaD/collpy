@@ -50,8 +50,7 @@ class Load_bar:
                 self.next(x,i)
                 b = self.name + ''.join(self.bar) + " || " + str(now-self.start)
                 sys.stdout.write('\r' + b)
-                if iterator < 10000000:
-                    time.sleep(0.1)
+                time.sleep(0.001)
                 sys.stdout.flush()
         
 

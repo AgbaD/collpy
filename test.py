@@ -10,6 +10,7 @@ squarebar = Square_bar()
 circlebar = Circle_bar()
 
 per = Percent(name='Processing...')
+spi = Spinner(name='Processing...')
 
 if __name__ == '__main__':
     
@@ -21,4 +22,5 @@ if __name__ == '__main__':
 
     print(2)
 
-    per.iter(100)
+    per.iter(1000)
+    spi.iter(1000000)

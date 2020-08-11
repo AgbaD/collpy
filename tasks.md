@@ -6,7 +6,7 @@
 
 [ ] progress display
     - [X] percentage
-    - [ ] spinner
+    - [X] spinner
 
 [ ] custom bottons
 
