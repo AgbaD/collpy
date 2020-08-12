@@ -16,7 +16,7 @@ per = Percent(name='Processing...')
 spi = Spinner(name='Processing...')
 """
 
-prog = Load_bar()
+prog = Load_bar(length=4)
 
 if __name__ == '__main__':
     for i in prog.iter('sade'):

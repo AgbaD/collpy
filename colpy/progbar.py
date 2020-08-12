@@ -17,23 +17,40 @@ class Load_bar:
         self.start = datetime.utcnow()
 
     def iter(self, iterable):
-        if isinstance(iterable,(str,list,tuple)):
-            it_len = len(iterable)
-            k = (1/it_len) * 20
-            for val in iterable:
-                sys.stdout.flush()
-                now = datetime.utcnow()
-                yield val
-                if val == iterable[-1]:
-                    self.bar = [self.style] * self.length
+        """Works in strings,lists,tuples and integers"""
+        try:
+            a = [i for i in iterable]
+        except:
+            a = [i for i in range(1,iterable+1)]
+        length = len(a)
+        x = self.getdiff(length)
+        z = self.getdiff(length)
+        count = 0
+        y = 0
+        for i in a:
+            now = datetime.utcnow()
+            yield i
+            count += 1
+            if count == x:
+                y += 1
+                if x * self.length == length:
+                    self.bar[y] = self.style
                 else:
-                    u = 1
-                    if u < it_len:
-                        for i in range(u*(int(k)) +1):
-                            self.bar[i] = self.style 
-                        u += 1
-                timee = now - self.start
-                output = "" + self.name + "".join(self.bar) + ' || ' + str(timee) + ""
-                sys.stdout.write(output)
-                sys.stdout.flush()
+                    if not third(y):
+                        self.bar[y] = self.style
+                x += z
+            if i == a[-1]:
+                for u in range(1,length+1):
+                    self.bar[u] = self.style
+            sys.stdout.flush()
+            b = self.name + "".join(self.bar) + " || " + str(now-self.start)
+            sys.stdout.write('\r' + b)
+        print('\n')
 
+    def getdiff(self,length):
+        """Get difference between length of iteratot and length of bar"""
+        if length < self.length:
+            raise IterError("Iterable value too small")
+        if length % self.length == 0:
+            return length / self.length
+        return length // self.length
