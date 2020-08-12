@@ -10,12 +10,12 @@ squarebar = Square_bar()
 circlebar = Circle_bar()
 
 if __name__ == '__main__':
-    for i in circlebar.iter('dtrggcjtydirydgjhgfkpjhgkuiytdgfrdjhgtfr'):
+    for i in circlebar.iter('dtrggcjydirydgjhgfkpjhgkuiytdgfrdjhgtfr'):
         v = 1
-        for j in range(100000):
+        for j in range(1000000):
             v *= j
     
-    for i in squarebar.iter(100):
+    for i in squarebar.iter(1000):
         v = 1
         for j in range(100000):
             v *= j

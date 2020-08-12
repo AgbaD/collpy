@@ -27,39 +27,22 @@ class Load_bar:
         z = self.getdiff(length)
         count = 0
         y = 1
-        nn = 0
-        # err = None
         for i in a:
-            yield i
+            # yield i
             # increment count to know the number of items taken
             # from the list a
             count += 1
             if count == x:
-                # increment nn only when the count equals the diff
-                nn += 1
-                if x * self.length == length:
+                # if position isn't last
+                if y != self.length:
                     self.bar[y] = self.style
                     y += 1
-                else:
-                    if not third(nn):
-                        # try:
-                        self.bar[y] = self.style
-                        y += 1
-                        """
-                        except:
-                            err =
-                            Make Iterator length(if str or list) a multiple of 
-                            the bar length \n
-                            If integer, make the value a multiple of bar length
-                            i.e if iterator is 75, 
-                            do\n
-                            >>>bar = Load_bar(length=15) # or 25 as you like
-                        """
                 x += z
             sys.stdout.flush()
             now = datetime.utcnow()
             b = self.name + "".join(self.bar) + " || " + str(now-self.start)
             sys.stdout.write('\r' + b)
+            yield i
         # to make the load bar complete
         for u in range(1,self.length+1):
             self.bar[u] = self.style
@@ -67,12 +50,6 @@ class Load_bar:
         now = datetime.utcnow()
         b = self.name + "".join(self.bar) + " || " + str(now-self.start)
         sys.stdout.write('\r' + b)
-        """
-        if err:
-            print('\033[33m' + err + '\033[0m')
-        else:
-            print(err)
-        """
 
         print('\n')
 
