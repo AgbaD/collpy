@@ -21,7 +21,7 @@ class Load_bar:
         try:
             a = [i for i in iterable]
         except:
-            a = [i for i in range(1,iterable+1)]
+            a = [i for i in range(iterable)]
         length = len(a)
         x = self.getdiff(length)
         z = self.getdiff(length)
