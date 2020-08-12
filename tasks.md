@@ -1,6 +1,6 @@
-[ ] load bar 
-    - [ ] frame color <str>
-    - [X] inside <list> [color, type eg,(:~/.\=+-|*_)]
+[ ] progress bar 
+    - [ ] colored load bars
+    - [X] actual load bars
     - [ ] random bar
 
 
