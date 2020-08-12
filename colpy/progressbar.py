@@ -30,7 +30,6 @@ class Load_bar:
         nn = 0
         # err = None
         for i in a:
-            now = datetime.utcnow()
             yield i
             # increment count to know the number of items taken
             # from the list a
@@ -46,7 +45,8 @@ class Load_bar:
                         # try:
                         self.bar[y] = self.style
                         y += 1
-                        """except:
+                        """
+                        except:
                             err =
                             Make Iterator length(if str or list) a multiple of 
                             the bar length \n
@@ -54,16 +54,17 @@ class Load_bar:
                             i.e if iterator is 75, 
                             do\n
                             >>>bar = Load_bar(length=15) # or 25 as you like
-                
                         """
                 x += z
             sys.stdout.flush()
+            now = datetime.utcnow()
             b = self.name + "".join(self.bar) + " || " + str(now-self.start)
             sys.stdout.write('\r' + b)
         # to make the load bar complete
         for u in range(1,self.length+1):
             self.bar[u] = self.style
         sys.stdout.flush()
+        now = datetime.utcnow()
         b = self.name + "".join(self.bar) + " || " + str(now-self.start)
         sys.stdout.write('\r' + b)
         """
@@ -115,3 +116,10 @@ class Circle_bar(Load_bar):
         self.style = '◉'
         self.length = length
         self.start = datetime.utcnow()
+
+bars = {
+    'darkbar': Dark_bar(),
+    'loadbar': Load_bar(),
+    'squarebar': Square_bar(),
+    'circlebar': Circle_bar()
+}
