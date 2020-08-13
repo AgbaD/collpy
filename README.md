@@ -24,6 +24,9 @@ To use, install package using pip
 $ pip3 install colpy
 ```
 ### Using Progress bars
+
+<img src="screenshots/ss1.png" alt="Home page"> 
+
 Progress bars are used to tell how far or how long a process has gone or taken and 
 how much is left to be done
 
@@ -164,3 +167,12 @@ err = 'List index out of range'
 error = highlight(txt=err,color='red')
 print('IndexError: ' + error + '....')
 ```
+
+## Note
+- kindly share with friends :smiley:
+- Thank you for using :smile:
+- If there is any problem, you can open an issue :grey_question:
+- Leave us a star :star:
+
+## Contributor(s)
+**[@BlankGodd](https://github.com/BlankGodd)**
