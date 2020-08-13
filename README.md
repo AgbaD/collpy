@@ -37,6 +37,8 @@ getting an idea of the time left for a process to reach completion.
 Import package into python script or shell environment
 ```py
 from colpy import *
+# or single imports
+from colpy import Load_bar
 
 # Using a custom load bar
 

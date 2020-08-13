@@ -8,3 +8,4 @@ class Botton:
 	out = ['[',']']
 
 	def __init__(self, ind=0, outer=True,color='red'):
+        
