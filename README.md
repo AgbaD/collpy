@@ -119,6 +119,9 @@ percent = Percent()
 Note: Highlights are best used with the pring function
 
 #### Creating a botton or bullet style
+
+<img src="ss/cbotton.png" alt="botton"> 
+
 Available botton states
 ['x','=','+','*','~','$','#','@',' ','-']
 
@@ -143,6 +146,11 @@ print(but + message)
 ```
 
 #### Changing text color and background
+
+CHANGING TEXT COLOR
+
+<img src="ss/cprint.png" alt="botton"> 
+
 When text color is to be changes, the text to be printed out should be 
 printed the the colpy cprint(txt=text,color='purple') method
 
@@ -156,6 +164,9 @@ for i in list:
 This prints out the test in the specified color
 
 CHANGING BACKGROUND
+
+<img src="ss/highlight.png" alt="botton"> 
+
 The background of a text can be changes to highligh parts of texts,
 show errors among other things
 
