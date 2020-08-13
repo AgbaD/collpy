@@ -19,5 +19,3 @@
 [ ] raising errors
 
 
-https://github.com/verigak/progress/blob/master/progress/bar.py
-
