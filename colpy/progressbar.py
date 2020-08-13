@@ -189,5 +189,8 @@ bars = {
     'darkbar': Dark_bar(),
     'loadbar': Load_bar(),
     'squarebar': Square_bar(),
-    'circlebar': Circle_bar()
+    'circlebar': Circle_bar(),
+    'randombar': Random_bar(),
+    'spinner': Spinner(),
+    'percent': Percent()
 }
