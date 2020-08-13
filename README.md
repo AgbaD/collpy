@@ -46,7 +46,7 @@ from colpy import Load_bar
 # single bars  
 loadbar = Load_bar(name="Processing...", length=20, style='$')
 """
-The load bar can be loaded with the parameters absents
+The load bar can be loaded with the parameters absent
 This makes the Load_bar use its default values
 name = Loading...
 length = 20
@@ -82,7 +82,7 @@ But here, the styles are fixed and can't be changed
 ```py
 darkbar = Dark_bar()
 circlebar = Circle_bar()
-squarenar = Square_bar()
+squarebar = Square_bar()
 ```
 
 ### Using the random bar
@@ -93,7 +93,7 @@ randombar = Random_bar(name='Downloading... ')
 
 # to use, call the iter method with the iterable
 for i in random.iter(val):
-    do som work on (i)
+    # do some work on (i)
 ```
 
 ### Using the Spinner and percent
@@ -105,14 +105,39 @@ spinner = Spinner(name='Authenticating... ')
 # to use, call the iter method with the iterable
 # support for a next() method will be available in future versions
 for i in spinner.iter(val):
-    do som work on (i)
+    # do some work on (i)
 
 # the same process works for percent
 percent = Percent()
 ```
 
-#### Support for a next() method for progress bars will 
-#### be available in future versions
+##### Support for a next() method for progress bars will be available in future versions
 
 ### Adding Highlights
+Note: Highlights are best used with the pring function
+
+#### Creating a botton
+Available botton state
+['x','=','+','*','~','$','#','@',' ','-']
+
+Available colors
+['red','green','orange','blue','purple','lightblue','cyan']
+
+```py
+from colpy import Botton
+
+# to add button
+# the ind parameter represents the index of the botton state on the list
+# remember indexing in python starts at 0
+# default index is zero, default color is red
+# default outer is True
+
+# outer (a boolean) determines if the botton should have an outer shell
+# '[x]' or not 'x'
+
+but = Button(ind=2,color='lightblue')
+message = 'text text text'
+print(b + message)
+```
+
 

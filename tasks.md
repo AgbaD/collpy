@@ -8,7 +8,7 @@
     - [X] percentage
     - [X] spinner
 
-[ ] custom bottons and bullet styles
+[ ] custom colored bottons and bullet styles
 
 [ ] highlights
 
