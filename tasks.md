@@ -2,7 +2,6 @@
     - [ ] colored load bars
     - [X] actual load bars
     - [ ] random bar
-    - [ ] increment time as process continues
 
 
 [ ] progress display
