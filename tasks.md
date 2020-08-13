@@ -8,13 +8,15 @@
     - [X] percentage
     - [X] spinner
 
-[ ] custom colored bottons and bullet styles
+[X] custom colored bottons and bullet styles
 
-[ ] highlights
+[X] highlights
 
-[ ] text color
+[X] text color
 
 [ ] add a next method to the progress displays
+
+[ ] raising errors
 
 
 https://github.com/verigak/progress/blob/master/progress/bar.py

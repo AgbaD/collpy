@@ -9,15 +9,14 @@ Add color highlights, load bars, progress displays and style to your python scri
   - errors
         
 - Create
-  - Custom buttons
-  - List bullet styles
+  - Custom buttons or list bullet styles
 
-- Progress bars
-  - Multi-styled loading bars
-  - Percentage progress display
-  - Spinner progress display
-  - Random load bar
-  - Download bar 
+  - Progress bars
+    - Multi-styled loading bars
+    - Percentage progress display
+    - Spinner progress display
+    - Random load bar
+    - Download bar 
 
 ## Usage
 To use, install package using pip
@@ -116,8 +115,8 @@ percent = Percent()
 ### Adding Highlights
 Note: Highlights are best used with the pring function
 
-#### Creating a botton
-Available botton state
+#### Creating a botton or bullet style
+Available botton states
 ['x','=','+','*','~','$','#','@',' ','-']
 
 Available colors
@@ -128,16 +127,40 @@ from colpy import Botton
 
 # to add button
 # the ind parameter represents the index of the botton state on the list
-# remember indexing in python starts at 0
+# of available botton states. Remember indexing in python starts at 0
 # default index is zero, default color is red
 # default outer is True
 
 # outer (a boolean) determines if the botton should have an outer shell
-# '[x]' or not 'x'
+# or not i.e '[x]' or 'x'
 
-but = Button(ind=2,color='lightblue')
+but = button(ind=2,color='lightblue')
 message = 'text text text'
-print(b + message)
+print(but + message)
 ```
 
+#### Changing text color and background
+When text color is to be changes, the text to be printed out should be 
+printed the the colpy cprint(txt=text,color='purple') method
 
+This prints out the text with the intended color
+```py
+# An example
+# for a list of values to be printed out
+for i in list:
+    cprint(txt=i, color='orange')
+```
+This prints out the test in the specified color
+
+CHANGING BACKGROUND
+The background of a text can be changes to highligh parts of texts,
+show errors among other things
+
+Available colors
+['black','red','green','orange','blue','purple','lightblue','cyan']
+```py
+# An example
+err = 'List index out of range'
+error = highlight(txt=err,color='red')
+print('IndexError: ' + error + '....')
+```
