@@ -4,6 +4,8 @@
 from . import *
 from datetime import datetime
 import sys, time
+import random
+
 
 class Load_bar:
 
@@ -17,7 +19,7 @@ class Load_bar:
 
     def iter(self, iterable):
         """Works in strings,lists,tuples and integers"""
-        self.start = datetime.utcnow()
+        start = datetime.utcnow()
         try:
             a = [i for i in iterable]
         except:
@@ -40,7 +42,7 @@ class Load_bar:
                 x += z
             sys.stdout.flush()
             now = datetime.utcnow()
-            b = self.name + "".join(self.bar) + " || " + str(now-self.start)
+            b = self.name + "".join(self.bar) + " || " + str(now-start)
             sys.stdout.write('\r' + b)
             yield i
         # to make the load bar complete
@@ -48,7 +50,7 @@ class Load_bar:
             self.bar[u] = self.style
         sys.stdout.flush()
         now = datetime.utcnow()
-        b = self.name + "".join(self.bar) + " || " + str(now-self.start)
+        b = self.name + "".join(self.bar) + " || " + str(now-start)
         sys.stdout.write('\r' + b)
 
         print('\n')
@@ -93,6 +95,95 @@ class Circle_bar(Load_bar):
         self.style = '◉'
         self.length = length
         self.start = datetime.utcnow()
+
+class Percent:
+    
+    def __init__(self, name='Loading...'):
+        self.name = name
+
+    def iter(self, iterable):
+        if iterable < 2:
+            raise IterError("Iterator value too small")
+        try:
+            a = [i for i in iterable]
+        except:
+            a = [i for i in range(iterable)]
+        length = len(a)
+        ind = 1
+        for i in a:
+            val = None
+            if ind <= length:
+                k = (ind/length) * 100
+                k = round(k, 0)
+                val = self.name + " " + str(k) + "%"
+            ind += 1
+            sys.stdout.write('\r' + val)
+            yield(i)
+            sys.stdout.flush()
+        print('\n')
+
+class Spinner(Percent):
+    phases = ('-', '\\', '|', '/','\\','|','-')
+    
+    def iter(self, iterable):
+        start = datetime.utcnow()
+        if iterable < 2:
+            raise IterError("Iterator value too small")
+        try:
+            a = [i for i in iterable]
+        except:
+            a = [i for i in range(iterable)]
+        length = len(a)
+        ind = 0
+        for i in a:
+            if ind > 6:
+                ind = 0
+            k = self.phases[ind]
+            now = datetime.utcnow()
+            val = self.name + " " + str(k) + " " + str(now-start)
+            ind += 1
+            sys.stdout.write('\r' + val)
+            yield(i)
+            sys.stdout.flush()
+        print("{} complete!".format(self.name))
+
+class Random_bar:
+
+    def __init__(self, name='Loading...'):
+        self.name = name
+        self.style = '█'
+
+    def make_bar(self):
+        bar = '[' + space(20) + "]"
+        self.bar = [i for i in bar]
+    
+    def iter(self, iterable):
+        start = datetime.utcnow()
+        if iterable < 2:
+            raise IterError("Iterator value too small")
+        try:
+            a = [i for i in iterable]
+        except:
+            a = [i for i in range(iterable)]
+        ind = [1, 3, 7, 11, 17, 20]
+        for i in a:
+            x = random.choice(ind)
+            self.make_bar()
+            for i in range(1, x+1):
+                self.bar[i] = self.style
+            sys.stdout.flush()
+            now = datetime.utcnow()
+            val = self.name + "".join(self.bar) + " || " + str(now-start)
+            sys.stdout.write('\r' + val)
+            yield(i)
+        for i in range(1, 21):
+            self.bar[i] = self.style
+        sys.stdout.flush()
+        now = datetime.utcnow()
+        val = self.name + "".join(self.bar) + " || " + str(now-start)
+        sys.stdout.write('\r' + val)
+        print('\n')
+
 
 bars = {
     'darkbar': Dark_bar(),

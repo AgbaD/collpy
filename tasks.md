@@ -1,10 +1,10 @@
 [ ] progress bar 
     - [ ] colored load bars
     - [X] actual load bars
-    - [ ] random bar
+    - [X] random bar
 
 
-[ ] progress display
+[X] progress display
     - [X] percentage
     - [X] spinner
 
