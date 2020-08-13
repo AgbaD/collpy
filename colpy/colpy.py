@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # Author:   @BlankGodd_
 
+from .progressbar import *
+from .fancy import *
 
-class Fancy:
-	base =  '\033[{}m'
 
