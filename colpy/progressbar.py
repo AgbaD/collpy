@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # Author:   @BlankGodd_
 
-from . import *
+from base import *
 from datetime import datetime
 import sys, time
 import random
@@ -145,7 +145,8 @@ class Spinner(Percent):
             sys.stdout.write('\r' + val)
             yield(i)
             sys.stdout.flush()
-        print("{} complete!".format(self.name))
+        print("\n{} complete!".format(self.name))
+        print('\n')
 
 class Random_bar:
 
