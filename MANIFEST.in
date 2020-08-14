@@ -1,0 +1,5 @@
+include *.md
+include *.rst
+include LICENSE
+recursive-include ss *.gif
+recursive-include ss *.png
