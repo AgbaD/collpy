@@ -9,14 +9,14 @@
   
   - [x] spinner
 
-[x] custom colored bottons and bullet styles
+- [x] custom colored bottons and bullet styles
 
-[x] highlights
+- [x] highlights
 
-[x] text color
+- [x] text color
 
-[ ] add a next method to the progress displays
+- [ ] add a next method to the progress displays
 
-[ ] raising errors
+- [ ] raising errors
 
 
