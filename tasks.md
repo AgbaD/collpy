@@ -1,12 +1,13 @@
-[ ] progress bar 
-- [ ] colored load bars
-- [x] actual load bars
-- [x] random bar
+- [ ] progress bar 
+  - [ ] colored load bars
+  - [x] actual load bars
+  - [x] random bar
 
 
-[x] progress display
-- [x] percentage
-- [x] spinner
+- [x] progress display
+  - [x] percentage
+  
+  - [x] spinner
 
 [x] custom colored bottons and bullet styles
 
