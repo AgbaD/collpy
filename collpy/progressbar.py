@@ -18,7 +18,7 @@ class Load_bar:
         self.length = length
 
     def iter(self, iterable):
-        """Works in strings,lists,tuples and integers"""
+        """Works on strings,lists,tuples and integers"""
         start = datetime.utcnow()
         try:
             a = [i for i in iterable]
@@ -118,7 +118,7 @@ class Percent:
                 val = self.name + " " + str(k) + "%"
             ind += 1
             sys.stdout.write('\r' + val)
-            yield(i)
+            yield i
             sys.stdout.flush()
         print('\n')
 
@@ -143,7 +143,7 @@ class Spinner(Percent):
             val = self.name + " " + str(k) + " " + str(now-start)
             ind += 1
             sys.stdout.write('\r' + val)
-            yield(i)
+            yield i
             sys.stdout.flush()
         print("\n{} complete!".format(self.name))
         print('\n')
@@ -176,7 +176,7 @@ class Random_bar:
             now = datetime.utcnow()
             val = self.name + "".join(self.bar) + " || " + str(now-start)
             sys.stdout.write('\r' + val)
-            yield(i)
+            yield i
         for i in range(1, 21):
             self.bar[i] = self.style
         sys.stdout.flush()

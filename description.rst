@@ -1,4 +1,4 @@
-collpy 0.0.3
+collpy 0.0.4
 ============
 
 Add text color highlights, load bars, progress displays and style to your
