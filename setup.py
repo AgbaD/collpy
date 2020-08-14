@@ -9,7 +9,7 @@ with open('description.rst', 'r') as fh:
 
 setup(
     name="colpy",
-    version=utils.details['__VERSION__'],
+    version="0.0.3",
     author="Damilare Agbabiaka (BlankGodd)",
     author_email="blankgodd33@gmail.com",
     description="Add color highlights, load bars, progress displays and style to your python scripts and shell sessions",
