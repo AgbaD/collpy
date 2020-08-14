@@ -25,7 +25,7 @@ $ pip3 install colpy
 ```
 ### Using Progress bars
 
-<img src="screenshots/ss1.png" alt="Home page"> 
+<img src="ss/loadbars.gif" alt="Loadbars"> 
 
 Progress bars are used to tell how far or how long a process has gone or taken and 
 how much is left to be done
@@ -149,7 +149,7 @@ print(but + message)
 
 CHANGING TEXT COLOR
 
-<img src="ss/cprint.png" alt="botton"> 
+<img src="ss/cprint.png" alt="colored text"> 
 
 When text color is to be changes, the text to be printed out should be 
 printed the the colpy cprint(txt=text,color='purple') method
@@ -165,7 +165,7 @@ This prints out the test in the specified color
 
 CHANGING BACKGROUND
 
-<img src="ss/highlight.png" alt="botton"> 
+<img src="ss/highlight.png" alt="highlight"> 
 
 The background of a text can be changes to highligh parts of texts,
 show errors among other things
