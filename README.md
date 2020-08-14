@@ -27,6 +27,13 @@ $ pip3 install colpy
 
 <img src="ss/loadbars.gif" alt="Loadbars"> 
 
+#### Available Bars
+- Load bar
+- Dark bar
+- Random bar
+- Circle bar
+- Square bar
+
 Progress bars are used to tell how far or how long a process has gone or taken and 
 how much is left to be done
 
