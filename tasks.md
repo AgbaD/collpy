@@ -1,18 +1,18 @@
 [ ] progress bar 
-    - [ ] colored load bars
-    - [X] actual load bars
-    - [X] random bar
+- [ ] colored load bars
+- [x] actual load bars
+- [x] random bar
 
 
-[X] progress display
-    - [X] percentage
-    - [X] spinner
+[x] progress display
+- [x] percentage
+- [x] spinner
 
-[X] custom colored bottons and bullet styles
+[x] custom colored bottons and bullet styles
 
-[X] highlights
+[x] highlights
 
-[X] text color
+[x] text color
 
 [ ] add a next method to the progress displays
 
