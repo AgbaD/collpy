@@ -2,7 +2,6 @@
 # Author:   @BlankGodd_
 
 from setuptools import setup
-from utils import utils
 
 with open('description.rst', 'r') as fh:
     long_description = fh.read()
