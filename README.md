@@ -37,10 +37,10 @@ $ pip3 install collpy
 Progress bars are used to tell how far or how long a process has gone or taken and 
 how much is left to be done
 
-It highlighs the lenght of the total procress and the time take to complete
+It highlighs the lenght of the total procress and the time taken to complete
 
 Progress bars are best used when a user wants to iterate over a number of values
-and perform actions on those values while taken note of the average time elapsed and
+and perform actions on those values while taking note of the average time elapsed and
 getting an idea of the time left for a process to reach completion.
 
 Import package into python script or shell environment
@@ -123,7 +123,7 @@ percent = Percent()
 ##### Support for a next() method for progress bars will be available in future versions
 
 ### Adding Highlights
-Note: Highlights are best used with the pring function
+Note: Highlights are best used with the print function
 
 #### Creating a botton or bullet style
 
@@ -157,7 +157,7 @@ CHANGING TEXT COLOR
 
 <img src="ss/cprint.png" alt="colored text"> 
 
-When text color is to be changes, the text to be printed out should be 
+When text color is to be changed, the text to be printed out should be 
 printed the the colpy cprint(txt=text,color='purple') method
 
 This prints out the text with the intended color
@@ -173,7 +173,7 @@ CHANGING BACKGROUND
 
 <img src="ss/highlight.png" alt="highlight"> 
 
-The background of a text can be changes to highligh parts of texts,
+The background of a text can be changed to highligh parts of texts,
 show errors among other things
 
 Available colors
