@@ -146,7 +146,7 @@ Available colors
 # outer (a boolean) determines if the botton should have an outer shell
 # or not i.e '[x]' or 'x'
 
-but = button(ind=2,color='lightblue')
+but = button(ind=2,color='purple')
 message = 'text text text'
 print(but + message)
 ```
@@ -165,7 +165,7 @@ This prints out the text with the intended color
 # An example
 # for a list of values to be printed out
 for i in list:
-    cprint(txt=i, color='orange')
+    cprint(txt=i, color='red')
 ```
 This prints out the test in the specified color
 

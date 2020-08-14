@@ -13,7 +13,7 @@ setup(
     author_email="blankgodd33@gmail.com",
     description="Add color highlights, load bars, progress displays and style to your python scripts and shell sessions",
     long_description=long_description,
-    long_description_content_type="text/markdown",
+    long_description_content_type="text/x-rst",
     url="https://github.com/BlankGodd/collpy",
     py_modules=["collpy","base","fancy","progressbar"],
     package_dir = {"":"collpy"},

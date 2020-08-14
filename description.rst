@@ -1,5 +1,5 @@
 collpy 0.0.3
-===========
+============
 
 Add color highlights, load bars, progress displays and style to your
 python scripts and shell sessions
@@ -139,7 +139,6 @@ Adding Highlights
 Note: Highlights are best used with the pring function
 
 Creating a botton or bullet style
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Available botton states ['x','=','+','\*','~','$','#','@',' ','-']
 
@@ -162,7 +161,7 @@ Available colors
     print(but + message)
 
 Changing text color and background
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 CHANGING TEXT COLOR
 
