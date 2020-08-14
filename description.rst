@@ -1,7 +1,7 @@
 collpy 0.0.3
 ============
 
-Add color highlights, load bars, progress displays and style to your
+Add text color highlights, load bars, progress displays and style to your
 python scripts and shell sessions
 
 `Collpy
