@@ -1,4 +1,4 @@
-# colpy 0.0.3
+# collpy 0.0.3
 Add color highlights, load bars, progress displays and style to your python scripts and shell sessions
 
 [Colpy Gist](https://gist.github.com/BlankGodd/9457548d94925de245f9a9bbcc1c3f02)
@@ -21,7 +21,7 @@ Add color highlights, load bars, progress displays and style to your python scri
 ## Usage
 To use, install package using pip
 ```
-$ pip3 install colpy
+$ pip3 install collpy
 ```
 ### Using Progress bars
 
@@ -45,9 +45,9 @@ getting an idea of the time left for a process to reach completion.
 
 Import package into python script or shell environment
 ```py
-from colpy import *
+from collpy import *
 # or single imports
-from colpy import Load_bar
+from collpy import Load_bar
 
 # Using a custom load bar
 
@@ -136,7 +136,6 @@ Available colors
 ['red','green','orange','blue','purple','lightblue','cyan']
 
 ```py
-from colpy import Botton
 
 # to add button
 # the ind parameter represents the index of the botton state on the list

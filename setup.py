@@ -7,16 +7,16 @@ with open('description.rst', 'r') as fh:
     long_description = fh.read()
 
 setup(
-    name="colpy",
+    name="collpy",
     version="0.0.3",
     author="Damilare Agbabiaka (BlankGodd)",
     author_email="blankgodd33@gmail.com",
     description="Add color highlights, load bars, progress displays and style to your python scripts and shell sessions",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/BlankGodd/colpy",
-    py_modules=["colpy","base","fancy","progressbar"],
-    package_dir = {"":"colpy"},
+    url="https://github.com/BlankGodd/collpy",
+    py_modules=["collpy","base","fancy","progressbar"],
+    package_dir = {"":"collpy"},
     classifiers=[
         "Environment :: Console",
         "Intended Audience :: Developers",
@@ -42,8 +42,8 @@ setup(
     ],  
     python_requires='>=3.6',
     project_urls={
-        "Bug Reports": "https://github.com/BlankGodd/colpy/issues",
-        "Read the Docs": "https://github.com/BlankGodd/colpy",
+        "Bug Reports": "https://github.com/BlankGodd/collpy/issues",
+        "Read the Docs": "https://github.com/BlankGodd/collpy",
     },
     keywords=["progress", "loadbars", "highlight", "percentage", "style",
              "random", "ansi"],
